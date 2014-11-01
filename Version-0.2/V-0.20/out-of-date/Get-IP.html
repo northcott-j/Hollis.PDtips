@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html ng-app="geo" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}</style><style type="text/css"></style>
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.angularjs.org/1.2.12/angular.min.js"></script>
+	<script src="http://code.angularjs.org/1.2.12/angular-route.min.js"></script>
+	<script>
+	'use strict';
+	var geo = angular.module('geo', [])
+	.controller('geoCtrl', ['$scope', '$http', function($scope, $http) {
+		$http.jsonp('http://ipinfo.io/?callback=JSON_CALLBACK')
+			.success(function(data) {
+			$scope.ip = data.ip;
+			$scope.hostname = data.hostname;
+			$scope.loc = data.loc; //lat-longtitude
+			$scope.org = data.org; //organization
+			$scope.city = data.city;
+			$scope.region = data.region; //state
+			$scope.country = data.country;
+			$scope.postal = data.postal; //city area code 
+		});
+	}]);  
+	</script>
+    <script src="Get-IP.js"></script>
+    
+    </head>
+    <body style="">
+	<div ng-controller="geoCtrl" class="ng-scope">
+		<p id="ip" ng-bind="ip" class="ng-binding"></p>
+		<p id="hostname" ng-bind="hostname">
+		<p id="cord" ng-bind="loc" class="ng-binding"></p>
+		<p id="host" ng-bind="org" class="ng-binding"></p>
+		<p id="city" ng-bind="city" class="ng-binding"></p>
+		<p id="state" ng-bind="region" class="ng-binding"></p>
+		<p id="country" ng-bind="country" class="ng-binding"></p>
+		<p id="zip" ng-bind="postal" class="ng-binding"></p>
+	</div>
+    <button onclick="ipEmbed()"></button>
+        <p id="embed" onload="ipEmbed()"></p>
+
+</body></html>
