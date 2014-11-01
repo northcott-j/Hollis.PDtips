@@ -1,0 +1,148 @@
+#frustrated {
+    float: left;
+}
+
+body {
+    background-color: #787878;
+}
+
+#jumbo {
+  background-color: #333;
+  color: #eee;
+    -webkit-box-shadow: 0 8px 6px -6px #888888;
+       -moz-box-shadow: 0 8px 6px -6px #888888;
+            box-shadow: 0 8px 6px -6px #888888;
+    min-width: 420px;
+}
+
+#jumbo2 {
+  background-color: #333;
+  color: #eee;
+  height: 5%;
+  width: 90%;
+}
+
+#jumbo p {
+  font-size: 16px;
+}
+#try-header {
+  margin: 30px 0px;
+}
+#try-more {
+  margin: 30px 0px;
+  font-style: italic;
+}
+
+#hiddenlink {
+    color:red;
+    cursor: text;
+}
+
+#hiddenlink:active {
+    color:red;
+    text-decoration: none;
+    cursor: text;
+}
+
+#hiddenlink:hover {
+ color: red;  
+ text-decoration: none;
+ cursor: text
+}
+
+#hiddenlink:visited {
+ color: red;  
+ text-decoration: none;
+ cursor: text
+}
+
+#chat {
+padding-right: 5px;
+background-color: #444;
+border-radius: 5px;
+box-shadow: 3px 3px 1px #888888;
+width: 393px;
+overflow: hidden;
+}
+
+#raptor {
+ width: 1px !important;
+ height: 1px !important;
+ opacity: 0 !important;
+ position: absolute !important;
+ left: -9999px !important;
+ overflow: hidden !important;
+    
+}
+
+.jumbotron2 {
+  height: 5%;
+  width: 90%;
+  margin: 0 0 0 0;
+}
+
+.red {
+  color: red;
+}
+
+.little {
+  font-size: 8px;
+}
+
+.float {
+    float: left;
+}
+
+.centerd {
+    margin:25px auto 0 auto;
+    margin-top:25px;
+    overflow: hidden;
+    width: 58%;
+    min-width: 700px;
+}
+
+.shrink {
+    width: 340px;
+}
+
+.shadow {
+padding-left: 5px;
+padding-top: 1px;
+padding-right: 5px;
+padding-bottom: 10px;
+background-color: #444;
+border-radius: 5px;
+box-shadow: 3px 3px 1px #888888;
+margin-right: 10px;
+margin-bottom: 10px;
+}
+
+.white {
+    color: white;
+}
+
+.needspace {
+    margin-top: 7px;
+}
+
+@media all and (max-width: 700px) {
+  .remove {
+float: none !important;
+width: 300px;
+margin-left: auto;
+margin-right: auto;
+  }
+
+#chat {
+    float: none;
+    display: block;
+    width: 400px !important;
+    margin: 0 auto 10px auto;
+}
+ 
+.centerd {
+    min-width: 420px;
+    
+}
+    
+}
