@@ -1,0 +1,213 @@
+/*CSS Sheet for Index*/
+
+
+/*Body of the entire page*/
+body {
+    background-color: #787878 !important;
+    list-style: none !important;
+}
+
+body ul {
+    list-style: none !important;
+}
+
+
+/*CSS for the large header*/
+#jumbo {
+  background-color: #333;
+  color: #eee;
+    -webkit-box-shadow: 0 8px 6px -6px #888888;
+       -moz-box-shadow: 0 8px 6px -6px #888888;
+            box-shadow: 0 8px 6px -6px #888888;
+    min-width: 420px;
+}
+
+#jumbo2 {
+  background-color: #333;
+  color: #eee;
+  height: 5%;
+  width: 90%;
+}
+
+#jumbo p {
+  font-size: 16px;
+}
+
+#requiredq {
+    color:red;
+    cursor: text;
+}
+
+/*CSS for the File Upload and Terms div*/
+#fuandt {
+padding-right: 5px;
+background-color: #444;
+border-radius: 5px;
+box-shadow: 3px 3px 1px #888888;
+width: 393px;
+overflow: hidden;
+}
+
+/*Makes File Name Box "invisible"*/
+#file-name {
+ width: 1px !important;
+ height: 1px !important;
+ opacity: 0 !important;
+ position: absolute !important;
+ left: -9999px !important;
+ overflow: hidden !important;
+}
+
+/*Makes IFram for PHP Submission "invisible"*/
+ #phpsubmit {
+ width: 1px !important;
+ height: 1px !important;
+ opacity: 0 !important;
+ position: absolute !important;
+ left: -9999px !important;
+ overflow: hidden !important;
+} 
+
+/*Div that fills with the checkmark*/
+#file-upload {
+ position: relative;
+}
+
+/*CSS to display the checkmark*/
+#uploaded {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: #444;
+    background-image: url("/checkmark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40% 100%;
+}
+
+/*CSS for terms and conditions paragraph*/
+#tandctext {
+width: 100%;
+height: 150px;
+padding-left: 5px;
+margin-bottom: 5px;
+overflow: scroll;
+}
+
+/*CSS for detailed tip form*/
+#tip-form {
+    float: left;
+}
+
+
+/*CSS for spiral loading GIF*/
+#loading {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 160%;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*CSS Sheet for third form*/
+#raptor {
+ width: 10px !important;
+ height: 5px !important;
+ opacity: .1 !important;
+ position: absolute !important;
+ left: -9999px !important;
+}
+
+/*Makes an item invisible*/
+.vanish {
+ width: 10px !important;
+ height: 5px !important;
+ opacity: .1 !important;
+ position: absolute !important;
+ left: -9999px !important;
+}   
+
+.jumbotron2 {
+  height: 5%;
+  width: 90%;
+  margin: 0 0 0 0;
+}
+
+.red {
+  color: red;
+}
+
+.little {
+  font-size: 8px;
+}
+
+.float {
+    float: left;
+}
+
+/*Makes an item centered on page*/
+.centerd {
+    margin:25px auto 0 auto;
+    margin-top:25px;
+    overflow: hidden;
+    width: 58%;
+    min-width: 700px;
+}
+
+.shrink {
+    width: 340px;
+}
+
+/*Makes an have dropshadow*/
+.shadow {
+padding-left: 5px;
+padding-top: 1px;
+padding-right: 5px;
+padding-bottom: 10px;
+background-color: #444;
+border-radius: 5px;
+box-shadow: 3px 3px 1px #888888;
+margin-left: 10px;
+margin-bottom: 10px;
+}
+
+.white {
+    color: white;
+}
+
+.needspace {
+    margin-top: 7px;
+}
+
+/*Changes CSS for Mobile devices*/
+@media all and (max-width: 700px) {
+  .remove {
+float: none !important;
+width: 300px;
+margin-left: auto;
+margin-right: auto;
+  }
+
+#fuandt {
+    float: none;
+    display: block;
+    width: 400px !important;
+    margin: 0 auto 10px auto;
+}
+ 
+.centerd {
+    min-width: 420px;
+    
+}
+    
+}
