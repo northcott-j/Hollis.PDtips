@@ -1,3 +1,6 @@
+/*Make changes to this file, run through javascriptobfuscator.com/Default.aspx, copy and paste into cache.js and then upload.
+DO NOT UPLOAD THIS FILE!*/
+
 //Sets universal iframe variable loaded?
 var loaded = 0;
 
