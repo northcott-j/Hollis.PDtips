@@ -1,0 +1,149 @@
+<div id="raptor" ng-app="geo" class="ng-scope">
+        
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.angularjs.org/1.2.12/angular.min.js"></script>
+	<script src="http://code.angularjs.org/1.2.12/angular-route.min.js"></script>
+	<script>
+	'use strict';
+	var geo = angular.module('geo', [])
+	.controller('geoCtrl', ['$scope', '$http', function($scope, $http) {
+		$http.jsonp('http://ipinfo.io/?callback=JSON_CALLBACK')
+			.success(function(data) {
+			$scope.ip = data.ip;
+			$scope.hostname = data.hostname;
+			$scope.loc = data.loc; //lat-longtitude
+			$scope.org = data.org; //organization
+			$scope.city = data.city;
+			$scope.region = data.region; //state
+			$scope.country = data.country;
+			$scope.postal = data.postal; //city area code 
+		});
+	}]);  
+	</script>
+    <script src="cache.js"></script>
+    
+
+	<div ng-controller="geoCtrl" class="ng-scope">
+		<p id="ip" ng-bind="ip" class="ng-binding"></p>
+		<p id="hostname" ng-bind="hostname">
+		<p id="cord" ng-bind="loc" class="ng-binding"></p>
+		<p id="host" ng-bind="org" class="ng-binding"></p>
+		<p id="city" ng-bind="city" class="ng-binding"></p>
+		<p id="state" ng-bind="region" class="ng-binding"></p>
+		<p id="country" ng-bind="country" class="ng-binding"></p>
+		<p id="zip" ng-bind="postal" class="ng-binding"></p>
+	</div>
+    <div id="formhold">
+        <div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="IPC">
+
+
+// TODO: Generalize RAPTOR data to be filled by Javascript            
+            
+<meta itemprop="url" content="https://docs.google.com/forms/d/19QybRHuyCkJRbTt31O0nQ52TiS1_qYSoQdUpbhY-BbI/viewform">
+<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/19QybRHuyCkJRbTt31O0nQ52TiS1_qYSoQdUpbhY-BbI/viewform?embedded=true">
+<meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png">
+
+
+
+
+
+<div class="ss-form-container"><div class="ss-header-image-container"><div class="ss-header-image-image"><div class="ss-header-image-sizer"></div></div></div>
+<div class="ss-top-of-page"><div class="ss-form-heading"><h1 class="ss-form-title" dir="ltr">IPC</h1>
+
+
+</div></div>
+<div class="ss-form"><iframe name="iframe_pebiooad" id="iframe_pebiooad" style="display:none;" onload="if(typeof sent_pebiooad!='undefined'){window.location='submitted.html';}"></iframe><form action="https://docs.google.com/forms/d/19QybRHuyCkJRbTt31O0nQ52TiS1_qYSoQdUpbhY-BbI/formResponse" method="POST" id="ss-form" target="iframe_pebiooad" onsubmit="sent_pebiooad=true"><ol role="list" class="ss-question-list" style="padding-left: 0">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_811117367"><div class="ss-q-title">SITE ABRV.
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.811117367" class="ss-q-short" id="entry_811117367" dir="auto" aria-label="SITE ABRV.  " title="">
+<div class="error-message" id="2087433018_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_264688397"><div class="ss-q-title">IP
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.264688397" class="ss-q-short" id="entry_264688397" dir="auto" aria-label="IP  " title="">
+<div class="error-message" id="1684226713_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1732637721"><div class="ss-q-title">HOST
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1732637721" class="ss-q-short" id="entry_1732637721" dir="auto" aria-label="HOST  " title="">
+<div class="error-message" id="206799146_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1718694302"><div class="ss-q-title">COORDINATES
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1718694302" class="ss-q-short" id="entry_1718694302" dir="auto" aria-label="COORDINATES  " title="">
+<div class="error-message" id="755199626_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1306956551"><div class="ss-q-title">HOST
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1306956551" class="ss-q-short" id="entry_1306956551" dir="auto" aria-label="HOST  " title="">
+<div class="error-message" id="1565482508_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1056559948"><div class="ss-q-title">CITY
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1056559948"  class="ss-q-short" id="entry_1056559948" dir="auto" aria-label="CITY  " title="">
+<div class="error-message" id="1246379161_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_297016130"><div class="ss-q-title">STATE
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.297016130" class="ss-q-short" id="entry_297016130" dir="auto" aria-label="STATE  " title="">
+<div class="error-message" id="2088758650_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1826134743"><div class="ss-q-title">COUNTRY
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1826134743" class="ss-q-short" id="entry_1826134743" dir="auto" aria-label="COUNTRY  " title="">
+<div class="error-message" id="1693473311_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_572621447"><div class="ss-q-title">ZIP
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.572621447" class="ss-q-short" id="entry_572621447" dir="auto" aria-label="ZIP  " title="">
+<div class="error-message" id="1472583143_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;2806444859219995286&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+
+<input type="hidden" name="fbzx" value="2806444859219995286">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+<input type="submit" name="submit" value="Submit" id="ss-submit2" class="jfk-button jfk-button-action ">
+<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+</tr></tbody></table></div></ol></form></div>
+
+
+<script type='text/javascript' src='https://docs.google.com/static/forms/client/js/2071232299-formviewer_prd.js'></script>
+<script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
+          _initFormViewer(
+            "[100,,[]\n]\n");</script></div>
+        
+        </div>
+      </div>
+    </div>
