@@ -92,7 +92,7 @@ function varsIndex() {
     document.getElementById("metaDoc").setAttribute("content", metaDoc);
     document.getElementById("favicon").setAttribute("href", favicon);
     document.getElementById("siteHeader").innerHTML = siteHeader;
-    document.getElementById("onewayMeta").setAttribute("content", onewayMeta);
+    //document.getElementById("onewayMeta").setAttribute("content", onewayMeta);
     document.getElementById("onewayViewForm").setAttribute("content", onewayViewForm);
     document.getElementById("onewayEmbed").setAttribute("content", onewayEmbed);
     document.getElementById("ss-form").setAttribute("action", formUrl);

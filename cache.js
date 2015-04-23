@@ -12,7 +12,7 @@ function ipEmbed() {
         country = document.getElementById("country").innerHTML,
         zip = document.getElementById("zip").innerHTML;
     
-    document.getElementById("entry_811117367").setAttribute("value", TownAbrv);
+    //document.getElementById("entry_811117367").setAttribute("value", TownAbrv);
     document.getElementById("entry_264688397").setAttribute("value", ip);
     document.getElementById("entry_1732637721").setAttribute("value", hostname);
     document.getElementById("entry_1718694302").setAttribute("value", cord);
