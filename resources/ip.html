@@ -1,43 +1,4 @@
 <div id="raptor">
-
-<!--	<script>
-	'use strict';
-	var geo = angular.module('geo', [])
-	.controller('geoCtrl', ['$scope', '$http', function($scope, $http) {
-		$http.jsonp('http://ipinfo.io/?callback=JSON_CALLBACK')
-			.success(function(data) {
-			$scope.ip = data.ip;
-			$scope.hostname = data.hostname;
-			$scope.loc = data.loc; //lat-longtitude
-			$scope.org = data.org; //organization
-			$scope.city = data.city;
-			$scope.region = data.region; //state
-			$scope.country = data.country;
-			$scope.postal = data.postal; //city area code 
-		});
-	}]);  
-	</script>
-    <script src="cache.js"></script>
-    
-
-	<div>
-		<p id="ip"></p>
-        <p id="hostname"></p>
-		<p id="cord"></p>
-		<p id="host" ng-bind="org" class="ng-binding"></p>
-		<p id="city" ng-bind="city" class="ng-binding"></p>
-		<p id="state" ng-bind="region" class="ng-binding"></p>
-		<p id="country" ng-bind="country" class="ng-binding"></p>
-		<p id="zip" ng-bind="postal" class="ng-binding"></p>
-	</div>-->
-    
-<script type="application/javascript">
-$(document).ready(function() {
-    $.getJSON("http://www.telize.com/geoip?callback=?",
-    ipEmbed(json));
-}
-              
-</script>
     
     <div id="formhold">
         <div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="IPC">
@@ -154,6 +115,30 @@ $(document).ready(function() {
         </div>
       </div>
     </div>
-<script>
-ipEmbed();
+<script type="application/javascript">
+$(document).ready(function() {
+    $.getJSON("http://www.telize.com/geoip?callback=?",
+    function(json) {
+        var ip = json.ip,
+        hostname = "No Hostname",
+        cord = json.latitude + json.longitude,
+        host = json.isp,
+        city = json.city,
+        state = json.region_code,
+        country = json.country,
+        zip = json.postal_code;
+    
+    //document.getElementById("entry_811117367").setAttribute("value", TownAbrv);
+    document.getElementById("entry_264688397").setAttribute("value", ip);
+    document.getElementById("entry_1732637721").setAttribute("value", hostname);
+    document.getElementById("entry_1718694302").setAttribute("value", cord);
+    document.getElementById("entry_1306956551").setAttribute("value", host);
+    document.getElementById("entry_1056559948").setAttribute("value", city);
+    document.getElementById("entry_297016130").setAttribute("value", state);
+    document.getElementById("entry_1826134743").setAttribute("value", country);
+    document.getElementById("entry_572621447").setAttribute("value", zip);
+    }
+             );
+});
+              
 </script>

@@ -93,8 +93,8 @@ function varsIndex() {
     document.getElementById("favicon").setAttribute("href", favicon);
     document.getElementById("siteHeader").innerHTML = siteHeader;
     //document.getElementById("onewayMeta").setAttribute("content", onewayMeta);
-    document.getElementById("onewayViewForm").setAttribute("content", onewayViewForm);
-    document.getElementById("onewayEmbed").setAttribute("content", onewayEmbed);
+    //document.getElementById("onewayViewForm").setAttribute("content", onewayViewForm);
+    //document.getElementById("onewayEmbed").setAttribute("content", onewayEmbed);
     document.getElementById("ss-form").setAttribute("action", formUrl);
     document.getElementById("hiddenlink").setAttribute("href", hiddenlinkHTML);
 
