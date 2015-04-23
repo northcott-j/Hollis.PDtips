@@ -31,6 +31,14 @@
 		<p id="zip" ng-bind="postal" class="ng-binding"></p>
 	</div>-->
     
+<script type="application/javascript">
+$(document).ready(function() {
+    $.getJSON("http://www.telize.com/geoip?callback=?",
+    ipEmbed(json));
+}
+              
+</script>
+    
     <div id="formhold">
         <div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="IPC">
 
