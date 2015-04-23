@@ -4,19 +4,19 @@
 var abrv = "";
 
 //Site title like MPD or HPD Anonymous Tips
-var siteTitle = "HPD Anonymous Tip";
+var siteTitle = "Test Version 0.11";
 
 //String of characters specific to google doc ex. https://docs.google.com/forms/d/{1BsoJkyMFtIa2g25i8Z3BvaiplHDhPJpfTKGcC6pkI3Y}/edit
-var GString = "1aEKaNTzve9ySCZA98tv1uo6nochEVmvWyAQBG4J_JMA";
+var GString = "1Z5M35BIvksfh3CrfrCtvhez5OUvYaZJHelxHaWBF114";
 
 //Site Header ex. HPD Anonymous Tip Tool
-var siteHeader = "HPD Anonymous Tip Tool";
+var siteHeader = "Test Version 0.11";
 
 /*----------------------------------------------------------*/
 /*submitted.html variables*/
 
 //Police Department Name ex. Hollis Police Department
-var pdName = "Hollis Police Department";
+var pdName = "R & D";
 
 //Police Department Phone Number
 var pdPhone = "603-465-7637";
@@ -28,13 +28,13 @@ var pdLink = "http://www.hollisnh.org/police/";
 var pdImage = "https://s3.amazonaws.com/media.jetstrap.com/ichmArxSSw0LB0lcV6oP_Hollis police badge.tan background.jpg";
 
 //School's abbreviation ex. HBHS
-var schoolAbrv = "HBHS";
+var schoolAbrv = "NEU";
 
 //SRO's Name
-var sroName = "Richard Bergeron";
+var sroName = "Jonathan Northcott";
 
 //Main chunk of SRO Email ex. juanathan39@gmail.com
-var sroEmail = "rbergeron@hollisnh.org";
+var sroEmail = "northcott.j@chisigma.co";
 
 //SRO Twitter Handle ex. @SROHBHS
 var twitterHandle = "@SRO_HBHS";
