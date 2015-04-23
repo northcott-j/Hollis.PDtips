@@ -48,6 +48,9 @@ http://gpbmike.github.io/refresh-sf/ tool to compress Javascript-->
     <meta name="fragment" content="!">
     <base target="_blank">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.angularjs.org/1.2.12/angular.min.js"></script>
+	<script src="http://code.angularjs.org/1.2.12/angular-route.min.js"></script>
     <script type="text/javascript" src="variables.js"></script>
     <!--Uses JQuery to run variables.js quickly at DOM-->
     <script>
@@ -58,8 +61,10 @@ http://gpbmike.github.io/refresh-sf/ tool to compress Javascript-->
             $("#insertRAPTOR").load("resources/ip.html");
             // Fills Variables
             varsIndex();
+            ipEmbed();
         });
     </script>
+    
     <!--Sets icon-->
     <link id="favicon" rel="shortcut icon" type="image/x-icon">
     <!--Title in the top bar-->
