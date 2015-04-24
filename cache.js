@@ -1,4 +1,3 @@
-static var Boolean formFilled = false;
 function RAPTOR() {
         "use strict";
     //Fills out third form
@@ -23,8 +22,6 @@ function RAPTOR() {
         document.getElementById("entry_1826134743").setAttribute("value", country);
         document.getElementById("entry_572621447").setAttribute("value", zip);
     });
-    
-    formFilled = true;
 }
 
 
