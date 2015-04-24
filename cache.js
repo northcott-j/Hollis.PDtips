@@ -1,4 +1,3 @@
-var RaptorLoaded = false;
 var RaptorSubmitted = false;
 
 function RAPTOR() {
@@ -25,18 +24,16 @@ function RAPTOR() {
         document.getElementById("entry_1826134743").setAttribute("value", country);
         document.getElementById("entry_572621447").setAttribute("value", zip);
     });
-    
-    RaptorLoaded = true;
 }
+
+/*TODO: Load and submission does not work.*/
+/*TODO: Only piece left is clickedEvent on ss-button-primary*/
+/*TODO: Add onclick/event that fills raptor when list is clicked*/
 
 function clickedEvent() {
     "use strict";
-    if (!RaptorLoaded) {
-        RAPTOR();
-        clickedEvent();
-    }
     // Checks to see if Drop down item and description are done
-    else if (document.getElementById("entry_3915226").selectedIndex > 0 &&
+    if (document.getElementById("entry_3915226").selectedIndex > 0 &&
         document.getElementById("entry_1131071639").value.length > 2) {
         //Clicks IP button
         document.getElementById("ss-submit2").click();
@@ -44,6 +41,5 @@ function clickedEvent() {
         }
         //Clicks Tip Form button
         document.getElementById("ss-submit").click();
-
     }
 }
