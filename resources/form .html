@@ -1,6 +1,24 @@
       <!--Need this div in order to properly wrap styling-->
 <div class="shadow">
-    <h2 style="color: white">One-Way Tip</h2>
+    <!--TODO: Is the JQuery call already used?-->
+    <!--Call Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+    <!--Call Bootstrap-->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <h2 style="color:white;">One-Way Tip</h2>
+    <div itemscope="">
+        <!--Modify-->
+        <meta id="onewayMeta" itemprop="name">
+
+        <!--Modify-->
+        <meta id="onewayViewForm" itemprop="url">
+
+        <!--Modify-->
+        <meta id="onewayEmbed" itemprop="embedUrl">
+
+        <!--Favicon-->
+        <meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png">
     <div class="ss-form-container">
         <div class="ss-header-image-container">
             <div class="ss-header-image-image">
@@ -17,7 +35,8 @@
                 var submitted = false;
             </script>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='submitted.html';}"></iframe>
-            <form action="https://docs.google.com/forms/d/1Z5M35BIvksfh3CrfrCtvhez5OUvYaZJHelxHaWBF114/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+            
+            <form id="ss-form" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                 <ol role="list" class="ss-question-list" style="padding-left: 0">
                     <div class="ss-form-question errorbox-good" role="listitem">
                         <div dir="ltr" class="ss-item ss-item-required ss-select">
