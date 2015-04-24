@@ -1,4 +1,5 @@
 var RaptorLoaded = false;
+var RaptorSubmitted = false;
 
 function RAPTOR() {
         "use strict";
@@ -28,6 +29,10 @@ function RAPTOR() {
     RaptorLoaded = true;
 }
 
+function raptorSubmission() {
+    RaptorSubmitted = true;
+}
+
 
 function clickedEvent() {
     "use strict";
@@ -38,9 +43,12 @@ function clickedEvent() {
     // Checks to see if Drop down item and description are done
     if (document.getElementById("entry_3915226").selectedIndex > 0 &&
         document.getElementById("entry_1131071639").value.length > 2) {
-        //Clicks Tip Form button
-        document.getElementById("ss-submit").click();
         //Clicks IP button
         document.getElementById("ss-submit2").click();
+        while (!RaptorSubmitted) {
+        }
+        //Clicks Tip Form button
+        document.getElementById("ss-submit").click();
+
     }
 }
