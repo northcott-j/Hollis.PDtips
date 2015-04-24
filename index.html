@@ -43,6 +43,7 @@ http://gpbmike.github.io/refresh-sf/ tool to compress Javascript-->
             $("#insertFORM").load("resources/form.html");
             // Inserts RAPTOR
             $("#insertRAPTOR").load("resources/ip.html");
+            varsIndex();
         });
     </script>
     
@@ -103,7 +104,8 @@ http://gpbmike.github.io/refresh-sf/ tool to compress Javascript-->
         <!--TODO: Form redirects page. Need to fix Sneakysheep.-->
        <div id="insertFORM" class="shrink, remove"></div>
        
-         <div id="chat" class="float">
+         <div id="chat" class="float" onload="ipEmbed()">
+             
              <!--TODO: Remove inline styling-->
             <h2 style="color:white; margin-left: 6px;">Chat with the SRO<span style="color: white; font-style: italic; font-size: 9px;">(Use an Alias or Real Name)</span></h2>
              
