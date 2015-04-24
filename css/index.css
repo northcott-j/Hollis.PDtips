@@ -11,22 +11,8 @@ body {
     min-width: 420px;
 }
 
-#jumbo2 {
-  background-color: #333;
-  color: #eee;
-  height: 5%;
-  width: 90%;
-}
-
 #jumbo p {
   font-size: 16px;
-}
-#try-header {
-  margin: 30px 0px;
-}
-#try-more {
-  margin: 30px 0px;
-  font-style: italic;
 }
 
 #hiddenlink {
@@ -52,6 +38,10 @@ body {
  cursor: text
 }
 
+#insertFORM {
+    float: left;
+}
+
 #chat {
 padding-right: 5px;
 background-color: #444;
@@ -71,12 +61,6 @@ overflow: hidden;
     
 }*/
 
-.jumbotron2 {
-  height: 5%;
-  width: 90%;
-  margin: 0 0 0 0;
-}
-
 .red {
   color: red;
 }
@@ -89,7 +73,7 @@ overflow: hidden;
     float: left;
 }
 
-.centerd {
+.center {
     margin:25px auto 0 auto;
     margin-top:25px;
     overflow: hidden;
@@ -117,10 +101,6 @@ margin-bottom: 10px;
     color: white;
 }
 
-.needspace {
-    margin-top: 7px;
-}
-
 @media all and (max-width: 700px) {
   .remove {
 float: none !important;
@@ -136,7 +116,7 @@ margin-right: auto;
     margin: 0 auto 10px auto;
 }
  
-.centerd {
+.center {
     min-width: 420px;
     
 }
