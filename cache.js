@@ -1,7 +1,6 @@
 static var Boolean formFilled = false;
 function RAPTOR() {
         "use strict";
-
     //Fills out third form
     $.getJSON("http://www.telize.com/geoip?callback=?", function (json) {
 
@@ -31,9 +30,6 @@ function RAPTOR() {
 
 function clickedEvent() {
     "use strict";
-    while (!formFilled) {
-        RAPTOR();
-    }
     // Checks to see if Drop down item and description are done
     if (document.getElementById("entry_3915226").selectedIndex > 0 &&
         document.getElementById("entry_1131071639").value.length > 2) {
