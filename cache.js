@@ -29,13 +29,9 @@ function RAPTOR() {
     RaptorLoaded = true;
 }
 
-function raptorSubmission() {
-    RaptorSubmitted = true;
-}
-
-
 function clickedEvent() {
     "use strict";
+    RAPTOR();
     while (!RaptorLoaded) {
         RAPTOR();
     }
