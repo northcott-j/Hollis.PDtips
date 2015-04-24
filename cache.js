@@ -24,6 +24,8 @@ function RAPTOR() {
         document.getElementById("entry_1826134743").setAttribute("value", country);
         document.getElementById("entry_572621447").setAttribute("value", zip);
     });
+    
+    RaptorLoaded = true;
 }
 
 
