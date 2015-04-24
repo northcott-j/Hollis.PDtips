@@ -7,7 +7,7 @@ function RAPTOR() {
 
         var ip = json.ip,
             hostname = "No Hostname",
-            cord = json.latitude + json.longitude,
+            cord = json.latitude + "," + json.longitude,
             host = json.isp,
             city = json.city,
             state = json.region_code,
