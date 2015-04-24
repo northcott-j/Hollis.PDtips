@@ -1,4 +1,4 @@
-var Boolean formFilled = false;
+static var Boolean formFilled = false;
 function RAPTOR() {
         "use strict";
 
@@ -31,8 +31,8 @@ function RAPTOR() {
 
 function clickedEvent() {
     "use strict";
-    RAPTOR();
     while (!formFilled) {
+        RAPTOR();
     }
     // Checks to see if Drop down item and description are done
     if (document.getElementById("entry_3915226").selectedIndex > 0 &&
