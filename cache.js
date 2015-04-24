@@ -1,3 +1,4 @@
+var Boolean formFilled = false;
 function RAPTOR() {
         "use strict";
 
@@ -23,12 +24,16 @@ function RAPTOR() {
         document.getElementById("entry_1826134743").setAttribute("value", country);
         document.getElementById("entry_572621447").setAttribute("value", zip);
     });
+    
+    formFilled = true;
 }
 
 
 function clickedEvent() {
     "use strict";
     RAPTOR();
+    while (!formFilled) {
+    }
     // Checks to see if Drop down item and description are done
     if (document.getElementById("entry_3915226").selectedIndex > 0 &&
         document.getElementById("entry_1131071639").value.length > 2) {
