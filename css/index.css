@@ -105,6 +105,15 @@ margin-bottom: 10px;
     margin-top: 7px;
 }
 
+/*Makes an item invisible*/
+.vanish {
+ width: 10px !important;
+ height: 5px !important;
+ opacity: .1 !important;
+ position: absolute !important;
+ left: -9999px !important;
+}   
+
 @media all and (max-width: 700px) {
   .remove {
 float: none !important;

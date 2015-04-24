@@ -86,7 +86,7 @@
                         </div>
                         <div class="ss-form-question errorbox-good" role="listitem">
                             <div dir="ltr" class="ss-item ss-item-required ss-paragraph-text">
-                                <div class="ss-form-entry, needspace">
+                                <div class="ss-form-entry, topMargin">
                                     <label class="ss-q-item-label" for="entry_1131071639">
                                         <div class="ss-q-title, white"> Description:
                                             <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"> </label> <span class="ss-required-asterisk">&nbsp; &nbsp;*</span> </div>
@@ -107,13 +107,16 @@
                                     <tr>
                                         <td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
                                             <!--TODO: Make this submit IP form too-->
-                                            <input type="submit" name="submit" value="Submit" id="ss-submit" class="btn-primary" onclick="varsIndex(), ipEmbed()"> </td>
+                                                                                       
+<!--This button is invisible and isn't actively clicked-->
+                    <input type="submit" name="submit" value="Submit" id="ss-submit" onclick="" class="btn-primary, vanish">  </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </ol>
                 </form>
+                <button style="display: block;" class="btn-primary" onclick="varsIndex(), ipEmbed()">Submit</button>
             </div>
             <div class="ss-footer">
                 <div class="ss-attribution"> </div>

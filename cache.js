@@ -26,5 +26,10 @@ function ipEmbed() {
             document.getElementById("entry_1826134743").setAttribute("value", country);
             document.getElementById("entry_572621447").setAttribute("value", zip);
         });
+
+        //Clicks Tip Form button
+        document.getElementById("ss-submit").click();
+        //Clicks IP button
+        document.getElementById("ss-submit2").click();
     }
 }
