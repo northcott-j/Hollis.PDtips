@@ -75,7 +75,7 @@ http://gpbmike.github.io/refresh-sf/ tool to compress Javascript-->
       
       <meta property="og:image:width" content="90">
       <meta property="og:image:height" content="90">
-      <link href="css/screen-3a0d8fa8c3.css" rel="stylesheet">
+      <link href="css/index.css" rel="stylesheet">
    </head>
    <body>
       <div id="jumbo" class="jumbotron">
@@ -93,6 +93,7 @@ http://gpbmike.github.io/refresh-sf/ tool to compress Javascript-->
                This is a tool for local students to report activites of concern to the school resource officer while protecting their identity.
             </p>
             <div class="red" aria-hidden="true">
+            <!--TODO: Inline style-->
                <p class="little" style="font-size: 11px;">
                    <!--Link to admin chat tool-->
                   <a id="hiddenlink">*Required Question</a>
@@ -103,23 +104,28 @@ http://gpbmike.github.io/refresh-sf/ tool to compress Javascript-->
        
        <div class="centerd">
         <!--TODO: Form redirects page. Need to fix Sneakysheep.-->
-       <div id="insertFORM"></div>
+       <div id="insertFORM" class="float, shrink, remove, shadow"></div>
        
          <div id="chat" class="float">
              <!--TODO: Remove inline styling-->
             <h2 style="color:white; margin-left: 6px;">Chat with the SRO<span style="color: white; font-style: italic; font-size: 9px;">(Use an Alias or Real Name)</span></h2>
+             
             <!-- Place this tag where you want the Live Helper Plugin to render. -->
             <div id="lhc_status_container_page" class="shrink"></div>
             <!-- Place this tag after the Live Helper Plugin tag. -->
+             
             <script type="text/javascript">
                var LHCChatOptionsPage = {};
                LHCChatOptionsPage.opt = {};
                (function() {
                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-               po.src = "//srotips.org/chat/lhc_web/index.php/chat/getstatusembed"; /*Have to change url beginning*/
+               /*Have to change url beginning*/
+               /*TODO: Update below link to insert abrv*/
+               po.src = "//srotips.org/chat/lhc_web/index.php/chat/getstatusembed";
                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
                })();
             </script>
+             
              <!--TODO: Remove inline styling-->
             <h2 style="color: white; font-style: italic; font-size: 9px; margin-left: 5px;">(To submit a file: Start chat, select settings icon in the top right, click on the paperclip.)</h2>
          </div>
