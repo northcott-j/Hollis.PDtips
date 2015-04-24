@@ -1,5 +1,3 @@
-var RaptorSubmitted = false;
-
 function RAPTOR() {
         "use strict";
     //Fills out third form
@@ -35,10 +33,7 @@ function clickedEvent() {
     // Checks to see if Drop down item and description are done
     if (document.getElementById("entry_3915226").selectedIndex > 0 &&
         document.getElementById("entry_1131071639").value.length > 2) {
-        //Clicks IP button
         document.getElementById("ss-submit2").click();
-        while (!RaptorSubmitted) {
-        }
         //Clicks Tip Form button
         document.getElementById("ss-submit").click();
     }
