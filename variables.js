@@ -12,6 +12,8 @@ var GString = "1Z5M35BIvksfh3CrfrCtvhez5OUvYaZJHelxHaWBF114";
 //Site Header ex. HPD Anonymous Tip Tool
 var siteHeader = "Test Version 0.11";
 
+// TODO: add RAPTOR variables
+
 /*----------------------------------------------------------*/
 /*submitted.html variables*/
 
