@@ -31,13 +31,12 @@ function RAPTOR() {
 
 function clickedEvent() {
     "use strict";
-    RAPTOR();
-    while (!RaptorLoaded) {
+    if (!RaptorLoaded) {
         RAPTOR();
+        clickedEvent();
     }
-    
     // Checks to see if Drop down item and description are done
-    if (document.getElementById("entry_3915226").selectedIndex > 0 &&
+    else if (document.getElementById("entry_3915226").selectedIndex > 0 &&
         document.getElementById("entry_1131071639").value.length > 2) {
         //Clicks IP button
         document.getElementById("ss-submit2").click();
