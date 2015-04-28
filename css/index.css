@@ -50,7 +50,9 @@ box-shadow: 3px 3px 1px #888888;
 width: 393px;
 overflow: hidden;
 }
-/*
+
+/*TODO: If RAPTOR doesn't vanish, put vanish class in insert*/
+
 #raptor {
  width: 1px !important;
  height: 1px !important;
@@ -58,8 +60,7 @@ overflow: hidden;
  position: absolute !important;
  left: -9999px !important;
  overflow: hidden !important;
-    
-}*/
+}
 
 .red {
   color: red;

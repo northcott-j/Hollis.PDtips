@@ -24,10 +24,6 @@ function RAPTOR() {
     });
 }
 
-/*TODO: Load and submission does not work.*/
-/*TODO: Only piece left is clickedEvent on ss-button-primary*/
-/*TODO: Add onclick/event that fills raptor when list is clicked*/
-
 function clickedEvent() {
     "use strict";
     // Checks to see if Drop down item and description are done
